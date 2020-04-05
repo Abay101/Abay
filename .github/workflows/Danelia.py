@@ -53,11 +53,11 @@ def makeSomeThing(exersize):
     elif 'текущее время' in exersize or 'сейчас времени' in exersize or 'который час' in exersize:
         now = datetime.datetime.now()
         talk("Сейчас " + str(now.hour) + ':' + str(now.minute))
-    elif 'топ' in exersize or 'стоп' in exersize or 'хватит' in exersize or 'прекроти' in exersize :
+    elif 'топ' in exersize or 'стоп' in exersize or 'хватит' in exersize or 'прекрати' in exersize :
         talk('Да, конечно')
         sys.exit()
     elif 'погода' in exersize:
-        talk('Скажите город в котором хотите узнать погоду: ')
+        talk('Скажите город, в котором хотите узнать погоду: ')
         r = sr.Recognizer()
         with sr.Microphone() as source1:
             audio1 = r.listen(source1)
@@ -68,7 +68,7 @@ def makeSomeThing(exersize):
         talk(' В городе ' + str(nameOFcity) + ' сейчас ' + w.get_detailed_status())
         talk('Температура в районе ' + str(temp) + 'градусов')
     elif 'что ты умеешь' in exersize or 'твои умения' in exersize or 'твои таланты' in exersize:
-    	talk('Я умею говорить время, открывать сайты, знаю погоду и пока я на стадии разроботки. ха-ха')
+    	talk('Я умею говорить время, открывать сайты, знаю погоду и пока я на стадии разработки. ха-ха')
     elif 'анекдот' in exersize or 'расскажи анекдот' in exersize or 'расскажи шутку' in exersize or 'шутка' in exersize:
         if a == 1:
             talk('Страшные времена. Людям приходится мыть руки, готовить дома еду и общаться со своими детьми. Так может дойти и до чтения книг. ХА ХА')
