@@ -6,3 +6,6 @@ security/
 
 # github
 .github/
+
+# trash
+.trash/
