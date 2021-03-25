@@ -1,7 +1,7 @@
 PyAudio==0.2.11
 pyowm==2.10.0
 pyttsx3==2.87
-PyYAML==5.3.1
+PyYAML==5.4
 requests==2.23.0
 SpeechRecognition==3.8.1
 urllib3==1.25.8
